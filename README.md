@@ -1,5 +1,5 @@
 # ASPNET-Snippets
-Some usefull snippets fpr ASPNET
+Some usefull snippets for ASPNET
 
 
 ### ServiceCollection: Add customize option from multi sections in IConfiguration
@@ -8,9 +8,9 @@ services.AddOptions();
 services.Configure<ApplicationOption>(
     configOptions =>
     {
-        Configuration.GetSection(ConfigStrings.Providers).Bind(configOptions.ProviderOptions);
-        Configuration.GetSection(ConfigStrings.ProviderSecrets).Bind(configOptions.SecretOptions);
-        Configuration.GetSection(ConfigStrings.AccountOptions).Bind(configOptions.AccountOptions);
+        Configuration.GetSection("ConfigStrings").Bind(configOptions.ProviderOptions);
+        Configuration.GetSection("ConfigStrings").Bind(configOptions.SecretOptions);
+        Configuration.GetSection("ConfigStrings").Bind(configOptions.AccountOptions);
     });
     
 ```
