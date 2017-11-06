@@ -17,3 +17,6 @@ services.Configure<ApplicationOption>(
 ### Testing ASP.NET appsettings.json
 https://github.com/aspnet/Configuration/blob/290b4989d409db0f3d73db93b2c1d2cd81a157a5/test/Microsoft.Extensions.Configuration.Json.Test/ArrayTest.cs#L192-L193
 
+### URL Localization  root/en-US/Index
+https://andrewlock.net/url-culture-provider-using-middleware-as-mvc-filter-in-asp-net-core-1-1-0/
+
