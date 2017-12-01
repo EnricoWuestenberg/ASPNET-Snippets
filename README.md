@@ -20,3 +20,6 @@ https://github.com/aspnet/Configuration/blob/290b4989d409db0f3d73db93b2c1d2cd81a
 ### URL Localization  root/en-US/Index
 https://andrewlock.net/url-culture-provider-using-middleware-as-mvc-filter-in-asp-net-core-1-1-0/
 
+### Zeitspannen / Lücken / Überschneidungen
+https://www.codeproject.com/Articles/168662/Time-Period-Library-for-NET
+
