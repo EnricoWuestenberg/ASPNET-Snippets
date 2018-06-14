@@ -23,3 +23,6 @@ https://andrewlock.net/url-culture-provider-using-middleware-as-mvc-filter-in-as
 ### Zeitspannen / Lücken / Überschneidungen
 https://www.codeproject.com/Articles/168662/Time-Period-Library-for-NET
 
+### Slack-Integration
+https://www.c-sharpcorner.com/UploadFile/bfb43a/integration-with-slack-using-C-Sharp/
+
