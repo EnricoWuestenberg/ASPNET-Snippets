@@ -27,9 +27,9 @@ https://www.codeproject.com/Articles/168662/Time-Period-Library-for-NET
 https://www.c-sharpcorner.com/UploadFile/bfb43a/integration-with-slack-using-C-Sharp/
 
 
-### ASP NET MVC with OpenID and Owin
+### ASP NET MVC4 with OpenID and Owin
 1. Startup.cs
-2. [assembly: OwinStartup(typeof(Startup))]
+2. [assembly: OwinStartup(typeof(Startup))] over namespace
 3. 
 ```c#
 
@@ -46,7 +46,7 @@ public void Configuration(IAppBuilder app)
             {
                 Authority = "https://{authority}.com",
                 ClientId = "client",
-                RedirectUri = "http://{redirectUri}:{port}/",
+                RedirectUri = "https://{redirectUri}:{port}/",
                 ResponseType = "code id_token token",
                 SignInAsAuthenticationType = "Cookies",
                 Scope = "scope scope scope",
