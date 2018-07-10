@@ -26,3 +26,42 @@ https://www.codeproject.com/Articles/168662/Time-Period-Library-for-NET
 ### Slack-Integration
 https://www.c-sharpcorner.com/UploadFile/bfb43a/integration-with-slack-using-C-Sharp/
 
+
+### ASP NET MVC with OpenID and Owin
+1. Startup.cs
+2. [assembly: OwinStartup(typeof(Startup))]
+3. 
+```c#
+
+public void Configuration(IAppBuilder app)
+        {
+            AntiForgeryConfig.UniqueClaimTypeIdentifier = JwtClaimTypes.Name;
+
+            app.UseCookieAuthentication(new CookieAuthenticationOptions
+            {
+                AuthenticationType = "Cookies"
+            });
+
+            app.UseOpenIdConnectAuthentication(new OpenIdConnectAuthenticationOptions
+            {
+                Authority = "https://{authority}.com",
+                ClientId = "client",
+                RedirectUri = "http://{redirectUri}:{port}/",
+                ResponseType = "code id_token token",
+                SignInAsAuthenticationType = "Cookies",
+                Scope = "scope scope scope",
+                Notifications = new OpenIdConnectAuthenticationNotifications
+                {
+                    AuthorizationCodeReceived = AuthorizationCallback
+                }
+            });
+        }
+        
+        private Task AuthorizationCallback(AuthorizationCodeReceivedNotification message)
+        {
+            // handle sign in
+            return Task.CompletedTask;
+        }
+
+```
+
