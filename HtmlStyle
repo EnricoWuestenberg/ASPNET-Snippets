@@ -1,0 +1,44 @@
+``` html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+  <div class="toolbar">Inhalt</div>
+  
+</body>
+</html>
+
+
+```
+
+```css
+.toolbar {
+  /* Positioniere das Element relativ zum Viewport */
+  position: fixed;
+  /* Bestimmt ob border und padding in die angegebene Höhe mit 
+     einfliesst. "border-box" ist der gängige Ansatz
+  */
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #602558;
+  
+  /* eventuell gibst du der Toolbar noch ein padding und eine
+     Vorschrift bzgl wie der Inhalt angeordnet werden soll.
+  
+     Bsp: Anordnung vertical zentriert und am Ende der horizontalen
+          Achse
+  */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+```
