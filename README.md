@@ -1,5 +1,5 @@
-# ASPNET-Snippets
-Some usefull snippets for ASPNET
+# Snippets
+Some usefull snippets
 
 
 ### ServiceCollection: Add customize option from multi sections in IConfiguration
